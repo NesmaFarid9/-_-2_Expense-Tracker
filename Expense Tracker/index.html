@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Expense Tracker</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2> Expense Tracker </h2>
+        <div>
+            <div>
+                <div class="part-one">
+                    <div class="form-droup">
+                        <label for="name">Name</label>
+                        <br>
+                        <input type="text" name="name" id="name" placeholder="Enter name" required>
+                    </div>
+                    <div class="form-droup">
+                        <label for="age">Age</label>
+                        <br>
+                        <input type="text" name="age" id="age" placeholder="Enter Age" required>
+                    </div>
+                </div>
+                <div class="part-two">
+                    <div class="form-droup">
+                        <label for="address">Address</label>
+                        <br>
+                        <input type="text" name="address" id="address" placeholder="Enter Address" required>
+                    </div>
+                    <div class="form-droup">
+                        <label for="email">Email</label>
+                        <br>
+                        <input type="email" name="email" id="email" placeholder="Enter Email" required>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn-add" id="Submit" onclick="AddData()">Add</button>
+                    <button class="btn-update" id="Update">Update</button>
+                </div>
+            </div>
+
+        </div>
+        <div>
+            <div>
+                <table class="table" id="crudTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Address</th>
+                            <th>Email</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
